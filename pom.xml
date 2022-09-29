@@ -6,7 +6,7 @@
 
     <artifactId>digital-tree</artifactId>
     <groupId>ru.havlong</groupId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>Havlong Digital Tree</name>
@@ -57,6 +57,14 @@
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
